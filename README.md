@@ -22,6 +22,28 @@ The project was recognized as a **Local Winner and Global Nominee** at the NASA 
 
 ---
 
+## 🎬 Videos & Demonstrations
+
+Explore ExoSky through the following demonstrations, created for the NASA International Space Apps Challenge 2024.
+
+### 🌌 ExoSky — 30-Second Demo
+
+A short demonstration highlighting ExoSky's interactive astronomical environment and visualization features.
+
+[![ExoSky 30-Second Demo](https://img.youtube.com/vi/I2kBzjhZP_w/hqdefault.jpg)](https://youtu.be/I2kBzjhZP_w)
+
+**[▶ Watch the 30-Second Demo](https://youtu.be/I2kBzjhZP_w)**
+
+### 🚀 ExoSky — 3-Minute Project Presentation
+
+The official project presentation introducing ExoSky's concept, scientific background, development approach, and interactive simulation.
+
+[![ExoSky 3-Minute Presentation](https://img.youtube.com/vi/JSTMxLjUSl8/hqdefault.jpg)](https://youtu.be/JSTMxLjUSl8)
+
+**[▶ Watch the Full Project Presentation](https://youtu.be/JSTMxLjUSl8)**
+
+---
+
 ## Technical Report
 
 The original technical report developed by Team Ad Astra for the
