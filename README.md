@@ -4,6 +4,8 @@
 
 **🏆 Local Winner | 🌍 Global Nominee**
 
+---
+
 ## Overview
 
 ExoSky is an interactive astronomical simulation developed using Unity and C# for the NASA International Space Apps Challenge 2024.
@@ -30,7 +32,7 @@ Stars that appear close together in Earth's night sky may actually be separated 
 
 Changing the observer's position can therefore change the apparent angular separation between stars, producing different constellation patterns.
 
-This phenomenon is related to the geometry of stellar parallax and the three-dimensional distribution of stars throughout the Milky Way.
+This phenomenon is related to stellar parallax and the three-dimensional distribution of stars throughout the Milky Way.
 
 ExoSky explores this concept by representing astronomical objects within a three-dimensional simulation.
 
@@ -111,7 +113,7 @@ where:
 - $begin:math:text$d\_\{new\}$end:math:text$ is the distance from the new observer.
 - $begin:math:text$m\_\{new\}$end:math:text$ is the estimated apparent magnitude from the new location.
 
-This relationship allows the simulation to estimate which stars may become brighter or fainter when the observer changes position.
+This relationship allows us to estimate which stars may become brighter or fainter when the observer changes position.
 
 ---
 
@@ -318,7 +320,7 @@ For additional implementation details, see:
 
 ### Application Development
 
-- Unity Engine
+- Unity Engine 2022.3.46f1
 - C#
 - Unity UI
 - TextMeshPro
@@ -354,8 +356,12 @@ For additional implementation details, see:
 ExoSky-NASA-Space-Apps-2024/
 │
 ├── Assets/
-│   ├── Scripts/
-│   └── ...
+│   └── Assets11/
+│       ├── Scenes/
+│       │   ├── MAIN SCENES/
+│       │   ├── EXO SCENES/
+│       │   └── OVERVIEW SCENES/
+│       └── ...
 │
 ├── Astronomical_Data_Processing/
 │   ├── gaia_data_extraction.py
@@ -364,8 +370,11 @@ ExoSky-NASA-Space-Apps-2024/
 │   └── README.md
 │
 ├── Packages/
+│   └── manifest.json
 │
 ├── ProjectSettings/
+│   ├── ProjectVersion.txt
+│   └── EditorBuildSettings.asset
 │
 ├── README.md
 │
@@ -392,17 +401,49 @@ Contains the Unity project configuration.
 
 ---
 
-## Installation and Usage
+## Download ExoSky for macOS
 
-### Requirements
+A prebuilt macOS version of ExoSky is available through GitHub Releases.
 
-To open and run the Unity project:
+### Download
+
+**[Download ExoSky for macOS](https://github.com/leochlala/ExoSky-NASA-Space-Apps-2024/releases/latest)**
+
+### Installation
+
+1. Open the GitHub Releases page using the link above.
+2. Download the ZIP file containing the macOS application.
+3. Extract the downloaded ZIP file.
+4. Open `ExoSky.app` to launch the simulation.
+
+The prebuilt application does not require Unity to be installed.
+
+### macOS Compatibility
+
+The application has been tested successfully on the developer's Mac.
+
+Compatibility with other macOS versions and hardware configurations has not yet been independently verified.
+
+If macOS prevents the application from opening because it is from an unidentified developer, users may need to authorize it through:
+
+**System Settings → Privacy & Security → Open Anyway**
+
+Users should only bypass this warning if they trust the downloaded application.
+
+---
+
+## Opening the Unity Source Project
+
+### Unity Requirements
 
 - Unity Hub
-- A compatible Unity Editor version
-- A computer capable of running the Unity application
+- **Unity Editor 2022.3.46f1 (Unity 2022 LTS)**
 
-The exact Unity Editor version can be found in:
+The project was developed using Unity Editor version **2022.3.46f1**.
+
+Using the same editor version is recommended to minimize compatibility issues.
+
+The version is recorded in:
 
 `ProjectSettings/ProjectVersion.txt`
 
@@ -428,13 +469,42 @@ Navigate to the cloned repository.
 
 **4. Open the project**
 
-Use the Unity Editor version specified in `ProjectSettings/ProjectVersion.txt`, or a compatible version.
+Use Unity Editor 2022.3.46f1.
+
+Allow Unity to import the assets and resolve the packages listed in:
+
+`Packages/manifest.json`
 
 **5. Launch the simulation**
 
-Open the appropriate Unity scene and press Play.
+Open the following scene:
 
-The startup scene has not yet been independently verified.
+`Assets/Assets11/Scenes/MAIN SCENES/WelcomeScreen.unity`
+
+Press **Play**.
+
+### Unity Scenes
+
+The Unity project contains 22 application scenes enabled in its build configuration.
+
+These include:
+
+- 1 welcome screen.
+- 1 main menu.
+- 10 exoplanet observation scenes.
+- 10 stellar-system overview scenes.
+
+The configured startup scene is:
+
+`WelcomeScreen.unity`
+
+All 22 scenes are enabled in:
+
+`ProjectSettings/EditorBuildSettings.asset`
+
+The project also contains TextMesh Pro example scenes that are not part of the application's configured build.
+
+**Note:** The Unity project files and build configuration have been inspected, but the project has not been independently reopened and compiled during the current repository review.
 
 ---
 
@@ -503,13 +573,22 @@ Generated datasets are excluded from version control through `.gitignore`.
 
 This repository contains the Unity source project developed for the NASA International Space Apps Challenge 2024, together with Python scripts for astronomical data processing.
 
+### Unity Application
+
 The available Unity source code includes:
 
 - Interactive constellation creation.
 - Elliptical orbit visualization.
 - Camera controls.
 - User interface functionality.
-- Other visualization components.
+- Exoplanet observation scenes.
+- Stellar-system overview scenes.
+
+The repository contains the project's Unity source files, scenes, assets, package declarations, and build configuration.
+
+The prebuilt macOS application has been successfully launched and tested on the developer's Mac.
+
+### Astronomical Data Processing
 
 The Python scripts provide:
 
@@ -518,9 +597,9 @@ The Python scripts provide:
 - Observer-relative stellar positions.
 - Simplified stellar visibility calculations.
 
-The Python pipeline has undergone basic functional testing.
+The Python pipeline has undergone basic functional testing, including syntax checks and tests of its underlying coordinate and magnitude calculations.
 
-Full-scale scientific validation, end-to-end reproducibility, and integration with the Unity application have not yet been independently verified.
+Full-scale scientific validation and integration with the Unity application have not yet been independently verified.
 
 ---
 
