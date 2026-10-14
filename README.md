@@ -656,13 +656,22 @@ The project combined astronomy, computational methods, and interactive visualiza
 
 ExoSky was developed as a collaborative project during the NASA International Space Apps Challenge 2024.
 
+---
+
+## 👥 Team Ad Astra
+
+ExoSky was developed by **Team Ad Astra** for the **NASA International Space Apps Challenge 2024**.
+
 ### Team Members
 
-Team member names and individual contributions will be added following confirmation.
+- Andy Kayrouz
+- Leo-George Chlala
+- Charbel Jabbour
+- Rita Hochar
+- Shady Aksamawati
+- David Atanalian
 
-### Leo-Georges Chlala
-
-Individual contributions to the project will be documented following confirmation.
+🏆 **Local Winner | Global Nominee — NASA Space Apps Challenge 2024**
 
 ---
 
