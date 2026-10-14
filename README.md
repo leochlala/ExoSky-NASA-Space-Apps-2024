@@ -436,34 +436,53 @@ Contains the Unity project configuration.
 
 ---
 
-## Download ExoSky for macOS
+## 📥 Download ExoSky
 
-A prebuilt macOS version of ExoSky is available through GitHub Releases.
+ExoSky v1.0 is available for macOS and Windows.
 
-### Download
+### 🍎 macOS
 
-**[Download ExoSky for macOS](https://github.com/leochlala/ExoSky-NASA-Space-Apps-2024/releases/latest)**
+**[⬇️ Download ExoSky for macOS](https://github.com/leochlala/ExoSky-NASA-Space-Apps-2024/releases)**
 
-### Installation
+1. Download `ExoSky-macOS.zip`.
+2. Extract the ZIP file.
+3. Open `ExoSky.app` to launch the simulation.
 
-1. Open the GitHub Releases page using the link above.
-2. Download the ZIP file containing the macOS application.
-3. Extract the downloaded ZIP file.
-4. Open `ExoSky.app` to launch the simulation.
+### 🪟 Windows
 
-The prebuilt application does not require Unity to be installed.
+**[⬇️ Download ExoSky for Windows](https://github.com/leochlala/ExoSky-NASA-Space-Apps-2024/releases/tag/v1.0-windows)**
 
-### macOS Compatibility
+1. Download `ExoSky-Windows.zip`.
+2. Extract the ZIP file.
+3. Open the extracted folder.
+4. Double-click `ExoSky.exe` to launch the simulation.
 
-The application has been tested successfully on the developer's Mac.
+**Note:** Keep the Windows executable and all supporting files together.
 
-Compatibility with other macOS versions and hardware configurations has not yet been independently verified.
+### 📦 All Releases
 
-If macOS prevents the application from opening because it is from an unidentified developer, users may need to authorize it through:
+**[View All ExoSky Releases](https://github.com/leochlala/ExoSky-NASA-Space-Apps-2024/releases)**
 
-**System Settings → Privacy & Security → Open Anyway**
+---
 
-Users should only bypass this warning if they trust the downloaded application.
+## 💻 Platform Compatibility
+
+ExoSky v1.0 is available for both macOS and Windows.
+
+| Platform | Availability | Testing Status |
+|----------|--------------|----------------|
+| macOS | ✅ Available | ✅ Tested |
+| Windows | ✅ Available | ✅ Tested |
+
+### System Requirements
+
+- **Game Engine:** Unity 2022.3.46f1
+- **macOS:** Distributed as a `.app` application
+- **Windows:** Distributed as a `.exe` application
+
+Both platform builds have been tested successfully.
+
+Compatibility and performance may vary depending on hardware and operating system versions.
 
 ---
 
