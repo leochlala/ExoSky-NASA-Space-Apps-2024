@@ -22,6 +22,19 @@ The project was recognized as a **Local Winner and Global Nominee** at the NASA 
 
 ---
 
+## Technical Report
+
+The original technical report developed by Team Ad Astra for the
+NASA International Space Apps Challenge 2024 is available below.
+
+The report documents the project's scientific methodology,
+astronomical coordinate transformations, stellar magnitude
+calculations, Unity implementation, and application features.
+
+📄 **[Read the Full Technical Report (PDF)](Documentation/ExoSky_Technical_Report_2024.pdf)**
+
+---
+
 ## Scientific Background
 
 ### 1. Observing the Universe from Different Locations
