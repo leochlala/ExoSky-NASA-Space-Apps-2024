@@ -108,3 +108,15 @@ InitTestScene*.unity*
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
 .DS_Store
+# Python cache files
+__pycache__/
+*.pyc
+
+# Generated astronomical datasets
+Astronomical_Data_Processing/star_data_with_parallax.csv
+Astronomical_Data_Processing/transformed_star_data.csv
+Astronomical_Data_Processing/visible_stars.csv
+
+# Python virtual environments
+.venv/
+venv/
